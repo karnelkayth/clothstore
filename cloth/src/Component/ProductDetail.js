@@ -31,9 +31,9 @@ const ProductDetail = () => {
       if(Size === ''){
         alert('Plz Select Size')
       }else{
-        const SendProduct = await axios.post('http://localhost:8000/product', {userphone, Productt})
+        const SendProduct = await axios.post('https://clothstore-faov.onrender.com/product', {userphone, Productt})
         if(SendProduct.data === 'Add Product'){
-          const SendData = await axios.get('http://localhost:8000/cart', {
+          const SendData = await axios.get('https://clothstore-faov.onrender.com/cart', {
             params: {userphone: userphone}
           })
           if(SendData){
