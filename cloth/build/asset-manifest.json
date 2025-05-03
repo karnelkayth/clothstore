@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f443e484.css",
+    "main.js": "/static/js/main.bf970780.js",
+    "static/js/453.524f0360.chunk.js": "/static/js/453.524f0360.chunk.js",
+    "static/media/FlameRegular.otf": "/static/media/FlameRegular.a7afd0d4bda2646c0181.otf",
+    "static/media/FlameSans.otf": "/static/media/FlameSans.dd82c9bf327b2316ac5e.otf",
+    "static/media/menfashion.jpg": "/static/media/menfashion.2c94c4511c6fde93a0a9.jpg",
+    "static/media/menstyle.jpg": "/static/media/menstyle.5509cedb96c9144d505e.jpg",
+    "static/media/womenpant.jpg": "/static/media/womenpant.1a839ce1aa8e8129b918.jpg",
+    "static/media/ethnic.webp": "/static/media/ethnic.1251d9058be96a8d06de.webp",
+    "static/media/brand.jpg": "/static/media/brand.2e3def31ec55346ca8d3.jpg",
+    "static/media/tshirtboth.jpg": "/static/media/tshirtboth.2e3def31ec55346ca8d3.jpg",
+    "static/media/menbotfashion.jpg": "/static/media/menbotfashion.0bd2ae5821fea14b3643.jpg",
+    "static/media/shorts.jpg": "/static/media/shorts.0b47bdcfeb484784dc5d.jpg",
+    "static/media/newarrival.avif": "/static/media/newarrival.915a125945428fcf46f6.avif",
+    "static/media/womenfashion.jpg": "/static/media/womenfashion.5f5e8a2170f027fadc22.jpg",
+    "index.html": "/index.html",
+    "main.f443e484.css.map": "/static/css/main.f443e484.css.map",
+    "main.bf970780.js.map": "/static/js/main.bf970780.js.map",
+    "453.524f0360.chunk.js.map": "/static/js/453.524f0360.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f443e484.css",
+    "static/js/main.bf970780.js"
+  ]
+}

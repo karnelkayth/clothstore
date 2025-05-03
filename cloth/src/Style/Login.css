@@ -1,0 +1,129 @@
+.top-login-sec{
+    width: 100%;
+    background-color:white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-wrapper-sec{
+    width: 45%;
+    padding-bottom: 40px;
+    background-color: #f5ebdc;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* #dcdcdc */
+/* #6f3c2f */
+.t-b-arr{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+#b-arr{
+    margin-left: 15px;
+}
+#m-des-sec{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#l-title{
+    color: #6f3c2f;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+#form-data-handle{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-data-handle form{
+    margin-top: 30px;
+    width:80%;
+}
+#des{
+    text-align: center;
+    font-family: 'small';
+    color: #6f3c2f;
+    font-size: 13px;
+    font-weight: lighter;
+}
+#user-number{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#user-otp{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#m-input{
+    border: none;
+    outline: none;
+    width:100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #6f3c2f;
+}
+#con-log-btn{
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#otp-input::placeholder{
+    text-align: center;
+}
+#otp-input{
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#notice{
+    color:#6f3c2f;
+    font-size: 10px;
+    font-weight:bold;
+    margin-top: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media((min-width:320px) and (max-width:480px)){
+    .login-wrapper-sec{
+        width: 90%;
+    }
+}
+
+@media((min-width:481px) and (max-width:770px)){
+    .login-wrapper-sec{
+        width: 90%;
+    }
+}
+#back{
+    margin-left: 10px;
+}
