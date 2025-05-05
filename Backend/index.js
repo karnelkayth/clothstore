@@ -23,10 +23,6 @@ app.post('/deleteproduct', deleteproduct)
 app.post('/order', orderroute)
 app.get('/getuser', GetUser)
 
-// At the bottom, after all your API routes
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
 
 
 const PORT = process.env.PORT || 8000;
