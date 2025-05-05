@@ -8,13 +8,13 @@ const cart = require('./route/CartRoute')
 const deleteproduct = require('./route/DeleteProduct')
 const orderroute = require('./route/PlaceOrderRoute')
 const GetUser = require('./route/GetUser')
-app.use(express.static('public'));
 
 const app = express();
 app.use(express.urlencoded())
 app.use(express.json())
 app.use(cors());
 app.use(bodyParser.json())
+app.use(express.static('public'));
 
 app.post('/signin', signin)
 app.post('/product', userproduct)
