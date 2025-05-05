@@ -82,13 +82,13 @@ const Cart = () => {
       SetProduct(NewQuantity)
       const UpdateCart = async () => {
         const UserPhone = localStorage.getItem('PhoneNumber')
-        const Response = await axios.post(`https://clothstore-faov.onrender.com/quantity`, {
+        const Response = await axios.post(`http://localhost:8000/quantity`, {
           userPhone: UserPhone,
           ProductName: NewQuantity[index].name,
           ProductQuantity: NewQuantity[index].quantity
         })
         if (Response.data === 'Product Update') {
-          const ProductUpdateRes = await axios.get('https://clothstore-faov.onrender.com/cart', {
+          const ProductUpdateRes = await axios.get('http://localhost:8000/cart', {
             params: { userphone: UserPhone }
           })
           localStorage.setItem('userData', JSON.stringify(ProductUpdateRes.data));
@@ -106,14 +106,14 @@ const Cart = () => {
       SetProduct(NewQuantity)
       const UpdateCart = async () => {
         const UserPhone = localStorage.getItem('PhoneNumber')
-        const Response = await axios.post('https://clothstore-faov.onrender.com/quantity', {
+        const Response = await axios.post('http://localhost:8000/quantity', {
           userPhone: UserPhone,
           ProductName: NewQuantity[index].name,
           ProductQuantity: NewQuantity[index].quantity
         })
         console.log('quantity upadate respone', Response)
         if (Response.data === 'Product Update') {
-          const ProductUpdateRes = await axios.get('https://clothstore-faov.onrender.com/cart', {
+          const ProductUpdateRes = await axios.get('http://localhost:8000/cart', {
             params: { userphone: UserPhones }
           })
           localStorage.setItem('userData', JSON.stringify(ProductUpdateRes.data));
@@ -130,10 +130,10 @@ const Cart = () => {
   const DeleteProduct = async (item) => {
     const ProductName = item.name
     const UserPhone = localStorage.getItem('PhoneNumber')
-    const DeleteProduct = await axios.post('https://clothstore-faov.onrender.com/deleteproduct', { UserPhone, ProductName })
+    const DeleteProduct = await axios.post('http://localhost:8000/deleteproduct', { UserPhone, ProductName })
     // console.log('this is delete product res', DeleteProduct)
     if (DeleteProduct.data === 'Product Deleted') {
-      const SendData = await axios.get('https://clothstore-faov.onrender.com/cart', {
+      const SendData = await axios.get('http://localhost:8000/cart', {
         params: { userphone: UserPhones }
       })
       // console.log('this is senddata', SendData)
@@ -151,12 +151,12 @@ const Cart = () => {
       if(Address.PaymentMethod === ''){
         alert('Select Payment Method')
       }else{
-        const SendOrder = await axios.post('https://clothstore-faov.onrender.com/order', {UserPhone,Address,CartItem,TotalPrice})
+        const SendOrder = await axios.post('http://localhost:8000/order', {UserPhone,Address,CartItem,TotalPrice})
         console.log('this is send order', SendOrder)
         if(SendOrder.data === 'Online Payment Not Support'){
           alert('Online Payment Not Support')
         }else if(SendOrder.data === 'Your Order Is Placed'){
-          const OrderData = await axios.get('https://clothstore-faov.onrender.com/cart', {
+          const OrderData = await axios.get('http://localhost:8000/cart', {
             params: {userphone: UserPhone}
           })
           if(OrderData){
