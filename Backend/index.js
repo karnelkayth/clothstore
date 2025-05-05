@@ -22,8 +22,9 @@ app.get('/cart', cart)
 app.post('/deleteproduct', deleteproduct)
 app.post('/order', orderroute)
 app.get('/getuser', GetUser)
-
-
+app.get('/project', (req,res) => {
+    res.send('your-project')
+})
 
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
