@@ -43,10 +43,10 @@ const SignIn = () => {
                 // set user phone to localStorage
                 window.localStorage.setItem('PhoneNumber', userphone)
                 // send user phone number to backend 
-                const response = await axios.post('http://localhost:8000/signin', {userphone})
+                const response = await axios.post('https://clothstore-m2ww.onrender.com/signin', {userphone})
                 console.log(response)
                 if(response.data === 'user is created'){
-                    const getdata = await axios.get('http://localhost:8000/getuser', {
+                    const getdata = await axios.get('https://clothstore-m2ww.onrender.com/getuser', {
                         params: {Phone: userphone}
                     })
                     if(getdata.data === 'User Not Exist'){
