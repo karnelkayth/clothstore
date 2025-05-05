@@ -8,6 +8,7 @@ const cart = require('./route/CartRoute')
 const deleteproduct = require('./route/DeleteProduct')
 const orderroute = require('./route/PlaceOrderRoute')
 const GetUser = require('./route/GetUser')
+app.use(express.static('public'));
 
 const app = express();
 app.use(express.urlencoded())
